@@ -233,13 +233,13 @@ const WeatherUpdate = () => {
         </aside>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:w-3/4 lg:pl-8">
+        <div className="flex flex-col lg:w-3/4 lg:pl-8 md:mt-6 sm:mt-6">
           <div className="flex justify-between">
             <div className="flex">
               <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-5xl  pl-2 font-black">
                 Weather Dashboard
               </h1>
-            </div>
+            </div>  
 
             <div className="flex items-center mb-4">
               <button
