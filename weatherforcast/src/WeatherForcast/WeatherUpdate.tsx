@@ -321,7 +321,7 @@ const WeatherUpdate = () => {
               <div className="flex items-center justify-between mt-4">
                 <div>
                   <p className="text-lg font-medium">
-                    Temperature: {weatherData.main.temp}°C
+                    Temperature: {(weatherData.main.temp-273.15).toFixed(2)}°C
                   </p>
                   <p>Humidity: {weatherData.main.humidity}%</p>
                   <p>Wind Speed: {weatherData.wind.speed} m/s</p>
@@ -357,7 +357,7 @@ const WeatherUpdate = () => {
                       className="w-16 h-16 mx-auto"
                     />
                     <p className="text-lg font-medium">
-                      Temp: {forecast.main.temp}°C
+                      Temp: {(forecast.main.temp-273.15).toFixed(2)}°C
                     </p>
                     <p>{forecast.weather[0].description}</p>
                   </div>
